@@ -1,0 +1,104 @@
+﻿<Window x:Class="A2Z_.Views.Display_Folder.Show_All_Teacher_Details"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:A2Z_.Views.Display_Folder"
+        mc:Ignorable="d"
+        Title="تفاصيل كورسات المدرس" Height="450" Width="1200"
+        FlowDirection="RightToLeft"
+        WindowStartupLocation="CenterScreen"
+        >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="16*"/>
+        </Grid.RowDefinitions>
+        <!--<Rectangle Grid.Row="0"  Fill="Black"  Opacity="0.7" MouseLeftButtonDown="Window_MouseDown" Grid.ColumnSpan="2"/>
+        <TextBlock Grid.Row="0" Foreground="White" Text="تفاصيل دفعات المدرس" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="60,5,50,0"/>
+        <Image Grid.Row="0"  Source="/Asset/A2zIcon.jpg" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,0,40,0" />
+        <Image Grid.Row="0" Grid.Column="1" Cursor="Hand" ToolTip="إغلاق" MouseLeftButtonUp="Ellipse_MouseLeftButtonUp" Source="/Asset/close_window_50px.png" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,2,10,0" />
+        <Image Grid.Row="0" Grid.Column="1" Cursor="Hand" ToolTip="تصغير" MouseLeftButtonUp="Ellipse_MouseLeftButtonUp_1" Source="/Asset/minimize_window_50px.png" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,2,40,0" />-->
+        <DataGrid x:Name="TeacherDetails" AlternatingRowBackground = "LightBlue"  
+         AlternationCount = "2" AutoGenerateColumns = "False"
+                  Grid.Row="1" 
+                  IsReadOnly="True"
+                  >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="الرقم"  Binding="{Binding Course_Id}"/>
+                <DataGridTextColumn Header="اسم المدرس" Binding="{Binding teacher}"/>
+                <DataGridTextColumn Header="اسم الكورس" Binding="{Binding materialStudy}"/>
+                <DataGridTextColumn Header="منتهي" Binding="{Binding Isfinished}"/>
+                <DataGridTextColumn Header="نسبة المدرس" Binding="{Binding coursePercent}"/>
+                <DataGridTextColumn Header="الغروب" Binding="{Binding Group}"/>
+                <DataGridTextColumn Header="السعر" Binding="{Binding Price}"/>
+                <DataGridTextColumn Header="عدد الطلاب المسجلة" Binding="{Binding studentCount}"/>
+                <DataGridTextColumn Header=" المبلغ المستحق " Binding="{Binding TeacherAmount}"/>
+                <DataGridTextColumn Header=" المبلغ المستحق الفعلي " Binding="{Binding TeacherDeserved}"/>
+                <DataGridTemplateColumn Header="الدفوعات" >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ListView  ItemsSource="{Binding payments}" >
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel >
+                                            <TextBox Text="{Binding Amount}" IsReadOnly="True" Width="Auto" />
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="التاريخ">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate >
+                            <ListView  ItemsSource="{Binding payments}"  Background="Snow" >
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel >
+                                            <TextBox Text="{Binding date,  StringFormat={}{0:dd.MM.yyyy}}" IsReadOnly="True"  Width="Auto"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="رقم الفاتورة">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate >
+                            <ListView  ItemsSource="{Binding payments}"  Background="Snow" >
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel >
+                                            <TextBox Text="{Binding PillNumber}" IsReadOnly="True"  Width="Auto"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                
+                <DataGridTemplateColumn Header="المبلغ المتبقي" >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ListView  ItemsSource="{Binding payments}" >
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel >
+                                            <TextBox Text="{Binding Stayed}" IsReadOnly="True"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

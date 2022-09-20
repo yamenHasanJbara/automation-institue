@@ -1,0 +1,48 @@
+﻿<Page x:Class="A2Z_.Views.Cafe.SalesCafe"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:local="clr-namespace:A2Z_.Views.Cafe"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="SalesCafe"
+      FlowDirection="RightToLeft">
+
+    <ScrollViewer>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="8*"/>
+        </Grid.ColumnDefinitions>
+            <Grid  Grid.Column="0" >
+                <TextBlock  Text="بيع مشروب" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="40" Foreground="Gray" FontSize="18"/>
+                <StackPanel VerticalAlignment="Top" Margin="60">
+                    <ComboBox x:Name="NameOfDrink" DisplayMemberPath="DrinkName" materialDesign:HintAssist.Hint="اختر نوع"    Margin="0,10" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+                    <TextBox x:Name="Amount" materialDesign:HintAssist.Hint="الكمية"  Margin="0,10" FontFamily="Champagne &amp; Limousines" FontSize="18" />
+                    <Button Foreground="White" Click="Add" VerticalAlignment="Bottom" Margin="0,10" Width="150" Content="إضافة"  Background="Black" Opacity="0.5" IsDefault="True"/>
+                    <Button Foreground="White" Click="delete" VerticalAlignment="Bottom" Margin="0,10" Width="150" Content="حذف"  Background="Black" Opacity="0.5" IsDefault="True"/>
+                    <Button Foreground="White" Click="update" VerticalAlignment="Bottom" Margin="0,10" Width="150" Content="تعديل"  Background="Black" Opacity="0.5" IsDefault="True"/>
+                    <DatePicker x:Name="Start_Date" materialDesign:HintAssist.Hint="من تاريخ"  Margin="0,10" FontFamily="Champagne &amp; Limousines" FontSize="18" ></DatePicker>
+                    <DatePicker x:Name="End_Date" materialDesign:HintAssist.Hint="إلى تاريخ"  Margin="0,10" FontFamily="Champagne &amp; Limousines" FontSize="18" ></DatePicker>
+                    <Button Foreground="White" Click="Show" VerticalAlignment="Bottom" Margin="0,10" Width="150" Content="إستعراض" Background="Black" Opacity="0.5" IsDefault="True"/>
+                    <TextBox IsReadOnly="True" x:Name="Sumofsales"   Margin="0,10" FontFamily="Champagne &amp; Limousines" FontSize="18" />
+                </StackPanel>
+            </Grid>
+            <DataGrid x:Name="DailyMovment" AlternatingRowBackground = "LightBlue"  
+                    AlternationCount = "2" AutoGenerateColumns = "False"
+                    IsReadOnly="True"
+                    Grid.Column="1" 
+                            >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="الرقم" Binding="{Binding CafeSales_Id}"/>
+                <DataGridTextColumn Header="الكمية" Binding="{Binding AmountOfSaleDrink}"/>
+                <DataGridTextColumn Header="السعر" Binding="{Binding DrinkPrice}"/>
+                <DataGridTextColumn Header="الاسم" Binding="{Binding DrinkName}"/>
+                <DataGridTextColumn Header=" التاريخ" Binding="{Binding date, StringFormat={}{0:dd.MM.yyyy}}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+    </ScrollViewer>
+</Page>

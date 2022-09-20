@@ -1,0 +1,21 @@
+﻿<Page x:Class="A2Z_.Views.Add_Folder.P_Add_Teacher"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+      xmlns:local="clr-namespace:A2Z_.Views.Add_Folder"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+        Title="إضافة مدرس"
+      FlowDirection="RightToLeft">
+
+    <Grid>
+        <TextBlock  Text="تسجيل مدرس" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="40" Foreground="Gray" FontSize="18"/>
+        <StackPanel VerticalAlignment="Top" Margin="60">
+            <TextBox x:Name="FullName" materialDesign:HintAssist.Hint="اسم المدرس" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="0,10" FontFamily="Champagne &amp; Limousines" FontSize="18" />
+            <TextBox x:Name="NubmerPhone" materialDesign:HintAssist.Hint="رقم الهاتف" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="0,10" FontFamily="Champagne &amp; Limousines" FontSize="18" />
+            <Button Foreground="White" VerticalAlignment="Bottom" Margin="0,50" Width="150" Content="تسجيل" Click="Add" Style="{StaticResource MaterialDesignFlatAccentBgButton}" Background="Black" Opacity="0.5" IsDefault="True"/>
+        </StackPanel>
+    </Grid>
+</Page>

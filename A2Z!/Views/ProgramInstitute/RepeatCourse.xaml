@@ -1,0 +1,50 @@
+﻿<Window x:Class="A2Z_.Views.ProgramInstitute.RepeatCourse"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+        xmlns:local="clr-namespace:A2Z_.Views.ProgramInstitute"
+        mc:Ignorable="d"
+        Title="تكرار مادة" Height="450" Width="800"
+        FlowDirection="RightToLeft"
+        WindowStyle="None"
+        ResizeMode="NoResize">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Rectangle Grid.Row="0"  Fill="Black"  Opacity="0.7" MouseLeftButtonDown="Window_MouseDown"/>
+        <TextBlock Grid.Row="0" Foreground="White" Text="تكرار دورة بموعد معين" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="60,5,50,0"/>
+        <Image Grid.Row="0"  Source="/Asset/A2zIcon.jpg" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,0,40,0" />
+        <Image Grid.Row="0" Cursor="Hand" ToolTip="إغلاق" MouseLeftButtonUp="Ellipse_MouseLeftButtonUp" Source="/Asset/close_window_50px.png" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,2,10,0" />
+        <ListBox Grid.Row="1" x:Name="Days" Margin="51,62,509.6,130"  materialDesign:HintAssist.Hint="اليوم"   FontFamily="Champagne &amp; Limousines" FontSize="14" Height="Auto" Background="#00000000">
+            <ListBoxItem Content="السبت"/>
+            <ListBoxItem Content="الأحد"/>
+            <ListBoxItem Content="الأثنين"/>
+            <ListBoxItem Content="الثلاثاء"/>
+            <ListBoxItem Content="الأربعاء"/>
+            <ListBoxItem Content="الخميس"/>
+            <ListBoxItem Content="الجمعة"/>
+        </ListBox>
+
+        <ListBox Grid.Row="1" x:Name="Hours"  Margin="356,62,307.6,130"  materialDesign:HintAssist.Hint="الساعه"   FontFamily="Champagne &amp; Limousines" FontSize="14" RenderTransformOrigin="0.359,0.63">
+            <ListBoxItem Content="8"/>
+            <ListBoxItem Content="10"/>
+            <ListBoxItem Content="12"/>
+            <ListBoxItem Content="2"/>
+            <ListBoxItem Content="4"/>
+            <ListBoxItem Content="6"/>
+        </ListBox>
+        <ListBox Grid.Row="1" x:Name="Halls"  Margin="543,62,119.6,130"  materialDesign:HintAssist.Hint="القاعة"  FontFamily="Champagne &amp; Limousines" FontSize="14">
+            <ListBoxItem Content="T1"/>
+            <ListBoxItem Content="T2"/>
+            <ListBoxItem Content="T3"/>
+        </ListBox>
+
+        <Button Grid.Row="1" Click="RepeateOncertainSchedule" VerticalAlignment="Bottom" Margin="543,0,133.6,93" Width="116.8" Content="إضافة" Style="{StaticResource MaterialDesignFlatAccentBgButton}"  Background="#FF4B73A5" IsDefault="True"/>
+    </Grid>
+</Window>

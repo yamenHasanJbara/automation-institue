@@ -1,0 +1,45 @@
+﻿<Window x:Class="A2Z_.Views.ProgramInstitute.Add_New_Schedule"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:A2Z_.Views.ProgramInstitute"
+        mc:Ignorable="d"
+        Title="إضافة دورة للبرنامج" Height="600" Width="1000"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        FlowDirection="RightToLeft">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Rectangle Grid.Row="0"  Fill="Black"  Opacity="0.7" MouseLeftButtonDown="Window_MouseDown"/>
+        <TextBlock Grid.Row="0" Foreground="White" Text="إضافة دورة لقاعة" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="60,5,50,0"/>
+        <Image Grid.Row="0"  Source="/Asset/A2zIcon.jpg" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,0,40,0" />
+        <Image Grid.Row="0" Cursor="Hand" ToolTip="إغلاق" MouseLeftButtonUp="Ellipse_MouseLeftButtonUp" Source="/Asset/close_window_50px.png" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,2,10,0" />
+        <Grid Grid.Row="1">
+            <ListBox x:Name="SectionName" SelectionChanged="SectionName_SelectionChanged" DisplayMemberPath="Section_Name" Margin="80,62,777,345.6" HorizontalAlignment="Stretch" Height="162"  VerticalAlignment="Center" Background="#FFF3C550" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+            <ListBox x:Name="CollageName" SelectionChanged="CollageName_SelectionChanged" DisplayMemberPath="Name" Margin="315,62,564,345.6" HorizontalAlignment="Stretch" Height="162"  VerticalAlignment="Center" Background="#FFB65454" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+            <ListBox x:Name="YearNumber" SelectionChanged="YearNumber_SelectionChanged" DisplayMemberPath="Year_Number" HorizontalAlignment="Stretch" Height="162" Margin="556,62,330,345.6" VerticalAlignment="Center" Background="#FF4B73A5" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+            <ListBox x:Name="Coursess" SelectionChanged="Coursess_SelectionChanged" Width="auto"   HorizontalAlignment="Stretch" Height="162"  VerticalAlignment="Center" Background="#FF779F44"   Margin="778,62,43,345.6" FontFamily="Champagne &amp; Limousines" FontSize="18">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock>
+                            <TextBlock.Text>
+                                <MultiBinding StringFormat="{}{0}   {1}">
+                                    <Binding Path="material_Study.Name"/>
+                                    <Binding Path="Group"/>
+                                </MultiBinding>
+                            </TextBlock.Text>
+                        </TextBlock>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <Button Click="AddCourseSchedule" VerticalAlignment="Bottom" Margin="840,0,43,267.6" Width="116.8" Content="إضافة" Style="{StaticResource MaterialDesignFlatAccentBgButton}"  Background="#FFF3C550" IsDefault="True"/>
+            <Button Click="RepeateOncertainSchedule" VerticalAlignment="Bottom" Margin="645,0,238,267.6" Width="116.8" Content="تكرار" Style="{StaticResource MaterialDesignFlatAccentBgButton}"  Background="#FF4B73A5" IsDefault="True"/>
+        </Grid>
+    </Grid>
+</Window>

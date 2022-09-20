@@ -1,0 +1,62 @@
+﻿<Page x:Class="A2Z_.Views.Payments.P_Show_Daily_Payments"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+      xmlns:local="clr-namespace:A2Z_.Views.Payments"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="تفاصيل الدفعات اليومية"
+      FlowDirection="RightToLeft"
+      >
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical" Grid.Column="0">
+            <DatePicker x:Name="Start_Date" materialDesign:HintAssist.Hint="من تاريخ" Style="{StaticResource MaterialDesignDatePicker}" Margin="0,20" FontFamily="Champagne &amp; Limousines" FontSize="18" ></DatePicker>
+            <DatePicker x:Name="End_Date" materialDesign:HintAssist.Hint="إلى تاريخ" Style="{StaticResource MaterialDesignDatePicker}" Margin="0,20" FontFamily="Champagne &amp; Limousines" FontSize="18" ></DatePicker>
+            <Button Foreground="White" Click="show" VerticalAlignment="Bottom" Margin="0,10" Width="150" Content="إستعراض" Style="{StaticResource MaterialDesignFlatAccentBgButton}" Background="Black" Opacity="0.5" IsDefault="True"/>
+        </StackPanel>
+        <DataGrid x:Name="PaymentsDetail" AlternatingRowBackground = "LightBlue"  
+                 AlternationCount = "2" AutoGenerateColumns = "False"
+                 IsReadOnly="True"
+                  Grid.Column="1"
+                  >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="الرقم" Binding="{Binding Payment_Id}" />
+                <DataGridTextColumn Header="الطالب" Binding="{Binding student.Name}" />
+                <DataGridTextColumn Header="الاستاذ" Binding="{Binding teacher.Name}" />
+                <DataGridTemplateColumn Header="الكورس" >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock>
+                                <TextBlock.Text>
+                                    <MultiBinding StringFormat="{}{0}   {1}">
+                                        <Binding Path="course.material_Study.Name"/>
+                                        <Binding Path="course.Group"/>
+                                    </MultiBinding>
+                                </TextBlock.Text>
+                            </TextBlock>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="المبلغ" Binding="{Binding Amount}" />
+                <DataGridTextColumn Header="رقم الفاتورة" Binding="{Binding PillNumber}" />
+                <DataGridTextColumn Header="التاريخ" Binding="{Binding date, StringFormat={}{0:dd.MM.yyyy}}" />
+                <DataGridTextColumn Header="النوع" Binding="{Binding Payment_Type}" />
+
+                <DataGridTemplateColumn Header="حذف">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Foreground="White" VerticalAlignment="Center" Click="delete"  Width="100"  Content="حذف" Style="{StaticResource MaterialDesignFlatAccentBgButton}" Background="Black" Opacity="0.5" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

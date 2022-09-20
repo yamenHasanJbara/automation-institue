@@ -1,0 +1,524 @@
+﻿<Page x:Class="A2Z_.Views.ProgramInstitute.ProgramInstitutOneAndHalfHour"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:A2Z_.Views.ProgramInstitute"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ProgramInstitutOneAndHalfHour"
+      x:Name="GridProgram"
+      
+      >
+    <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible">
+        <Grid ShowGridLines="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="170"/>
+                <ColumnDefinition Width="170"/>
+                <ColumnDefinition Width="170"/>
+                <ColumnDefinition Width="170"/>
+                <ColumnDefinition Width="170"/>
+                <ColumnDefinition Width="170"/>
+                <ColumnDefinition Width="170"/>
+                <ColumnDefinition Width="90"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+
+
+            <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="0" >
+                <DataGridCell>
+                    <TextBox Foreground="White"  TextAlignment="Center"   TextWrapping="Wrap" Text="الجمعة"   FontFamily="Simplified Arabic"  FontSize="14" Background="#FF4B73A5" IsReadOnly="True"/>
+                </DataGridCell>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="0">
+                <DataGridCell Width="170" Height="33" x:Name="Friday_T1_8" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Friday_T2_8" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Friday_T3_8" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="2" Grid.Column="0">
+
+                <DataGridCell Width="170" Height="33" x:Name="Friday_T1_930" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Friday_T2_930" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Friday_T3_930" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="3" Grid.Column="0">
+
+                <DataGridCell Width="170" Height="33" x:Name="Friday_T1_11" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Friday_T2_11" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Friday_T3_11" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="4" Grid.Column="0">
+
+                <DataGridCell Width="170" Height="33" x:Name="Friday_T1_1230" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Friday_T2_1230" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Friday_T3_1230" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="5" Grid.Column="0">
+
+                <DataGridCell Width="170" Height="33" x:Name="Friday_T1_2" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Friday_T2_2" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Friday_T3_2" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="6" Grid.Column="0">
+
+                <DataGridCell Width="170" Height="33" x:Name="Friday_T1_330" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Friday_T2_330" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Friday_T3_330" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="7" Grid.Column="0">
+
+                <DataGridCell Width="170" Height="33" x:Name="Friday_T1_5" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Friday_T2_5" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Friday_T3_5" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="8" Grid.Column="0">
+
+                <DataGridCell Width="170" Height="33" x:Name="Friday_T1_630" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Friday_T2_630" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Friday_T3_630" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+
+
+
+            <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="1" >
+                <DataGridCell>
+                    <TextBox Foreground="White"  TextAlignment="Center"   TextWrapping="Wrap" Text="الخميس"   FontFamily="Simplified Arabic"  FontSize="14" Background="#FF4B73A5" IsReadOnly="True"/>
+                </DataGridCell>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="1">
+
+                <DataGridCell Width="170" Height="33" x:Name="Thursday_T1_8" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Thursday_T2_8" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Thursday_T3_8" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="2" Grid.Column="1">
+
+                <DataGridCell Width="170" Height="33" x:Name="Thursday_T1_930" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Thursday_T2_930" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Thursday_T3_930" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="3" Grid.Column="1">
+
+                <DataGridCell Width="170" Height="33" x:Name="Thursday_T1_11" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Thursday_T2_11" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Thursday_T3_11" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="4" Grid.Column="1">
+
+                <DataGridCell Width="170" Height="33" x:Name="Thursday_T1_1230" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Thursday_T2_1230" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Thursday_T3_1230" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="5" Grid.Column="1">
+
+                <DataGridCell Width="170" Height="33" x:Name="Thursday_T1_2" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Thursday_T2_2" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Thursday_T3_2" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="6" Grid.Column="1">
+
+                <DataGridCell Width="170" Height="33" x:Name="Thursday_T1_330" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Thursday_T2_330" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Thursday_T3_330" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="7" Grid.Column="1">
+
+                <DataGridCell Width="170" Height="33" x:Name="Thursday_T1_5" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Thursday_T2_5" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Thursday_T3_5" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="8" Grid.Column="1">
+
+                <DataGridCell Width="170" Height="33" x:Name="Thursday_T1_630" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Thursday_T2_630" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Thursday_T3_630" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+
+
+
+
+            <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="2" >
+
+                <DataGridCell>
+                    <TextBox Foreground="White"  TextAlignment="Center"   TextWrapping="Wrap" Text="الاربعاء"   FontFamily="Simplified Arabic"  FontSize="14" Background="#FF4B73A5" IsReadOnly="True"/>
+                </DataGridCell>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="2">
+
+                <DataGridCell Width="170" Height="33" x:Name="Wednesday_T1_8" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Wednesday_T2_8" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Wednesday_T3_8" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="2" Grid.Column="2">
+
+                <DataGridCell Width="170" Height="33" x:Name="Wednesday_T1_930" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Wednesday_T2_930" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Wednesday_T3_930" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="3" Grid.Column="2">
+
+                <DataGridCell Width="170" Height="33" x:Name="Wednesday_T1_11" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Wednesday_T2_11" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Wednesday_T3_11" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="4" Grid.Column="2">
+
+                <DataGridCell Width="170" Height="33" x:Name="Wednesday_T1_1230" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Wednesday_T2_1230" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Wednesday_T3_1230" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="5" Grid.Column="2">
+
+                <DataGridCell Width="170" Height="33" x:Name="Wednesday_T1_2" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Wednesday_T2_2" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Wednesday_T3_2" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="6" Grid.Column="2">
+
+                <DataGridCell Width="170" Height="33" x:Name="Wednesday_T1_330" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Wednesday_T2_330" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Wednesday_T3_330" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="7" Grid.Column="2">
+
+                <DataGridCell Width="170" Height="33" x:Name="Wednesday_T1_5" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Wednesday_T2_5" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Wednesday_T3_5" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="8" Grid.Column="2">
+
+                <DataGridCell Width="170" Height="33" x:Name="Wednesday_T1_630" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Wednesday_T2_630" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Wednesday_T3_630" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+
+
+
+            <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="3" >
+
+                <DataGridCell>
+                    <TextBox Foreground="White"  TextAlignment="Center"   TextWrapping="Wrap" Text="الثلاثاء"   FontFamily="Simplified Arabic"  FontSize="14" Background="#FF4B73A5" IsReadOnly="True"/>
+                </DataGridCell>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="3">
+
+                <DataGridCell Width="170" Height="33" x:Name="Tuesday_T1_8" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Tuesday_T2_8" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Tuesday_T3_8" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="2" Grid.Column="3">
+
+                <DataGridCell Width="170" Height="33" x:Name="Tuesday_T1_930" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Tuesday_T2_930" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Tuesday_T3_930" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="3" Grid.Column="3">
+
+                <DataGridCell Width="170" Height="33" x:Name="Tuesday_T1_11" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Tuesday_T2_11" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Tuesday_T3_11" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="4" Grid.Column="3">
+
+                <DataGridCell Width="170" Height="33" x:Name="Tuesday_T1_1230" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Tuesday_T2_1230" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Tuesday_T3_1230" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="5" Grid.Column="3">
+
+                <DataGridCell Width="170" Height="33" x:Name="Tuesday_T1_2" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Tuesday_T2_2" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Tuesday_T3_2" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="6" Grid.Column="3">
+
+                <DataGridCell Width="170" Height="33" x:Name="Tuesday_T1_330" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Tuesday_T2_330" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Tuesday_T3_330" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="7" Grid.Column="3">
+
+                <DataGridCell Width="170" Height="33" x:Name="Tuesday_T1_5" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Tuesday_T2_5" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Tuesday_T3_5" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="8" Grid.Column="3">
+
+                <DataGridCell Width="170" Height="33" x:Name="Tuesday_T1_630" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Tuesday_T2_630" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Tuesday_T3_630" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+
+
+
+
+            <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="4" >
+
+                <DataGridCell>
+                    <TextBox Foreground="White"  TextAlignment="Center"   TextWrapping="Wrap" Text="الاثنين"   FontFamily="Simplified Arabic"  FontSize="14" Background="#FF4B73A5" IsReadOnly="True"/>
+                </DataGridCell>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="4">
+
+                <DataGridCell Width="170" Height="33" x:Name="Monday_T1_8" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Monday_T2_8" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Monday_T3_8" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="2" Grid.Column="4">
+
+                <DataGridCell Width="170" Height="33" x:Name="Monday_T1_930" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Monday_T2_930" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Monday_T3_930" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="3" Grid.Column="4">
+
+                <DataGridCell Width="170" Height="33" x:Name="Monday_T1_11" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Monday_T2_11" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Monday_T3_11" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="4" Grid.Column="4">
+
+                <DataGridCell Width="170" Height="33" x:Name="Monday_T1_1230" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Monday_T2_1230" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Monday_T3_1230" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="5" Grid.Column="4">
+
+                <DataGridCell Width="170" Height="33" x:Name="Monday_T1_2" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Monday_T2_2" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Monday_T3_2" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="6" Grid.Column="4">
+
+                <DataGridCell Width="170" Height="33" x:Name="Monday_T1_330" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Monday_T2_330" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Monday_T3_330" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="7" Grid.Column="4">
+
+                <DataGridCell Width="170" Height="33" x:Name="Monday_T1_5" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Monday_T2_5" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Monday_T3_5" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="8" Grid.Column="4">
+
+                <DataGridCell Width="170" Height="33" x:Name="Monday_T1_630" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Monday_T2_630" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Monday_T3_630" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+
+
+
+
+
+            <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="5" >
+
+                <DataGridCell>
+                    <TextBox Foreground="White"  TextAlignment="Center"   TextWrapping="Wrap" Text="الاحد"   FontFamily="Simplified Arabic"  FontSize="14" Background="#FF4B73A5" IsReadOnly="True"/>
+                </DataGridCell>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="5">
+
+                <DataGridCell Width="170" Height="33" x:Name="Sunday_T1_8" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Sunday_T2_8" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Sunday_T3_8" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="2" Grid.Column="5">
+
+                <DataGridCell Width="170" Height="33" x:Name="Sunday_T1_930" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Sunday_T2_930" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Sunday_T3_930" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="3" Grid.Column="5">
+
+                <DataGridCell Width="170" Height="33" x:Name="Sunday_T1_11" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Sunday_T2_11" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Sunday_T3_11" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="4" Grid.Column="5">
+
+                <DataGridCell Width="170" Height="33" x:Name="Sunday_T1_1230" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Sunday_T2_1230" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Sunday_T3_1230" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="5" Grid.Column="5">
+
+                <DataGridCell Width="170" Height="33" x:Name="Sunday_T1_2" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Sunday_T2_2" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Sunday_T3_2" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="6" Grid.Column="5">
+
+                <DataGridCell Width="170" Height="33" x:Name="Sunday_T1_330" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Sunday_T2_330" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Sunday_T3_330" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="7" Grid.Column="5">
+
+                <DataGridCell Width="170" Height="33" x:Name="Sunday_T1_5" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Sunday_T2_5" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Sunday_T3_5" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="8" Grid.Column="5">
+
+                <DataGridCell Width="170" Height="33" x:Name="Sunday_T1_630" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Sunday_T2_630" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Sunday_T3_630" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+
+
+
+
+
+
+            <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="6" >
+
+                <DataGridCell>
+                    <TextBox Foreground="White"  TextAlignment="Center"   TextWrapping="Wrap" Text="السبت"   FontFamily="Simplified Arabic"  FontSize="14" Background="#FF4B73A5" IsReadOnly="True"/>
+                </DataGridCell>
+            </StackPanel>
+            <!--Stack panel for courses-->
+            <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="6">
+                <!--Saturday 8-9.30-->
+                <DataGridCell Width="170" Height="33" x:Name="Saturday_T1_8" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Saturday_T2_8" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Saturday_T3_8" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="2" Grid.Column="6">
+                <!--Saturday 9.30-11-->
+                <DataGridCell Width="170" Height="33" x:Name="Saturday_T1_930" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Saturday_T2_930" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Saturday_T3_930" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="3" Grid.Column="6">
+                <!--Saturday 11-12.30-->
+                <DataGridCell Width="170" Height="33" x:Name="Saturday_T1_11" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Saturday_T2_11" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Saturday_T3_11" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="4" Grid.Column="6">
+                <!--Saturday 12.30 -2-->
+                <DataGridCell Width="170" Height="33" x:Name="Saturday_T1_1230" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Saturday_T2_1230" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Saturday_T3_1230" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="5" Grid.Column="6">
+                <!--Saturday 2-3.3-->
+                <DataGridCell Width="170" Height="33" x:Name="Saturday_T1_2" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Saturday_T2_2" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Saturday_T3_2" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="6" Grid.Column="6">
+                <!--Saturday 3.30 - 5-->
+                <DataGridCell Width="170" Height="33" x:Name="Saturday_T1_330" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Saturday_T2_330" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Saturday_T3_330" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="7" Grid.Column="6">
+                <!--Saturday 5- 6.30-->
+                <DataGridCell Width="170" Height="33" x:Name="Saturday_T1_5" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Saturday_T2_5" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Saturday_T3_5" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="8" Grid.Column="6">
+                <!--Saturday 6.30 -8-->
+                <DataGridCell Width="170" Height="33" x:Name="Saturday_T1_630" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black" FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#e7f7ff" KeyDown="Friday_T1_8_KeyDown"/>
+                <DataGridCell Width="170" Height="33" x:Name="Saturday_T2_630" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#fcebfe" KeyDown="Friday_T1_8_KeyDown" />
+                <DataGridCell Width="170" Height="33" x:Name="Saturday_T3_630" Margin="0,1,0,0" MouseDoubleClick="DataGrid_MouseDoubleClick" FlowDirection="RightToLeft" Foreground="Black"  FontFamily="Champagne &amp; Limousines"  FontSize="14" Background="#faf7cc" KeyDown="Friday_T1_8_KeyDown"/>
+            </StackPanel>
+
+            <!--Course Time-->
+            <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="7" >
+                <DataGridCell>
+                    <TextBox Foreground="White"  TextAlignment="Center"   TextWrapping="Wrap" Text="التوقيت"   FontFamily="Simplified Arabic"  FontSize="14" Background="#FF4B73A5" IsReadOnly="True"/>
+                </DataGridCell>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="7" >
+                <DataGridCell>
+                    <TextBox x:Name="FirstTime" Foreground="White"  TextAlignment="Center"   TextWrapping="Wrap" Text="8"   FontFamily="Simplified Arabic"  FontSize="14" Background="#FF4B73A5" IsReadOnly="True"/>
+                </DataGridCell>
+                
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="2" Grid.Column="7" >
+                <DataGridCell>
+                    <TextBox x:Name="SecondTime" Foreground="White"  TextAlignment="Center"   TextWrapping="Wrap" Text="9.30"   FontFamily="Simplified Arabic"  FontSize="14" Background="#FF4B73A5" IsReadOnly="True"/>
+                </DataGridCell>
+                
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="3" Grid.Column="7" >
+                <DataGridCell>
+                    <TextBox x:Name="ThirdTime" Foreground="White"  TextAlignment="Center"   TextWrapping="Wrap" Text="11"   FontFamily="Simplified Arabic"  FontSize="14" Background="#FF4B73A5" IsReadOnly="True"/>
+                </DataGridCell>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="4" Grid.Column="7" >
+                <DataGridCell>
+                    <TextBox x:Name="FourthTime" Foreground="White"  TextAlignment="Center"   TextWrapping="Wrap" Text="12.30"   FontFamily="Simplified Arabic"  FontSize="14" Background="#FF4B73A5" IsReadOnly="True"/>
+                </DataGridCell>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="5" Grid.Column="7" >
+                <DataGridCell>
+                    <TextBox x:Name="FifthTime" Foreground="White"  TextAlignment="Center"   TextWrapping="Wrap" Text="2"   FontFamily="Simplified Arabic"  FontSize="14" Background="#FF4B73A5" IsReadOnly="True"/>
+                </DataGridCell>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="6" Grid.Column="7" >
+                <DataGridCell>
+                    <TextBox x:Name="SixTime" Foreground="White"  TextAlignment="Center"   TextWrapping="Wrap" Text="3.30"   FontFamily="Simplified Arabic"  FontSize="14" Background="#FF4B73A5" IsReadOnly="True"/>
+                </DataGridCell>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="7" Grid.Column="7" >
+                <DataGridCell>
+                    <TextBox x:Name="SevenTime" Foreground="White"  TextAlignment="Center"   TextWrapping="Wrap" Text="5"   FontFamily="Simplified Arabic"  FontSize="14" Background="#FF4B73A5" IsReadOnly="True"/>
+                </DataGridCell>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="8" Grid.Column="7" >
+                <DataGridCell>
+                    <TextBox x:Name="EightTime" Foreground="White"  TextAlignment="Center"   TextWrapping="Wrap" Text="6.30"   FontFamily="Simplified Arabic"  FontSize="14" Background="#FF4B73A5" IsReadOnly="True"/>
+                </DataGridCell>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Page>

@@ -1,0 +1,90 @@
+﻿<Window x:Class="A2Z_.Views.Payments.StudentPaymentsForCertainCourse"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:A2Z_.Views.Payments"
+        mc:Ignorable="d"
+        Title="تفاصيل دفعات الدورات" Height="450" Width="800"
+        FlowDirection="RightToLeft"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="16*"/>
+        </Grid.RowDefinitions>
+        <Rectangle Grid.Row="0"  Fill="Black"  Opacity="0.7" MouseLeftButtonDown="Window_MouseDown" Grid.ColumnSpan="2"/>
+        <TextBlock Grid.Row="0" Foreground="White" Text="تفاصيل دفعات الطالب" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="60,5,50,0"/>
+        <Image Grid.Row="0"  Source="/Asset/A2zIcon.jpg" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,0,40,0" />
+        <Image Grid.Row="0" Grid.Column="1" Cursor="Hand" ToolTip="إغلاق" MouseLeftButtonUp="Ellipse_MouseLeftButtonUp" Source="/Asset/close_window_50px.png" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,2,10,0" />
+        <Image Grid.Row="0" Grid.Column="1" Cursor="Hand" ToolTip="تصغير" MouseLeftButtonUp="Ellipse_MouseLeftButtonUp_1" Source="/Asset/minimize_window_50px.png" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,2,40,0" />
+        <DataGrid x:Name="CoursePaymentsDetails" AlternatingRowBackground = "LightBlue"  
+                 AlternationCount = "2" AutoGenerateColumns = "False"
+                 IsReadOnly="True"
+                  Grid.Row="1"
+                  >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="الرقم" Binding="{Binding Payment_Id}" Width ="auto"/>
+                <DataGridTextColumn Header="الكورس" Binding="{Binding course.material_Study.Name}" Width ="auto"/>
+                <DataGridTextColumn Header="الغروب" Binding="{Binding course.Group}" Width ="auto"/>
+                <DataGridTemplateColumn Header="الدفوعات">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ListView ItemsSource="{Binding}">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Amount}"/>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="التاريخ">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ListView ItemsSource="{Binding}">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding date, StringFormat={}{0:dd.MM.yyyy}}"/>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="رقم الفاتورة">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ListView ItemsSource="{Binding}">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding PillNumber}"/>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="المتبقي">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ListView ItemsSource="{Binding}">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Stayed}"/>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

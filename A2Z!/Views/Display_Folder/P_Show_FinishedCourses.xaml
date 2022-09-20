@@ -1,0 +1,50 @@
+﻿<Page x:Class="A2Z_.Views.Display_Folder.P_Show_FinishedCourses"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:local="clr-namespace:A2Z_.Views.Display_Folder"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="الدورات المنتهية"
+      FlowDirection="RightToLeft">
+    <Grid>
+        <DataGrid x:Name="CourseDetails" AlternatingRowBackground = "LightBlue"  
+                 AlternationCount = "2" AutoGenerateColumns = "False"
+                 IsReadOnly="True"
+                 MouseDoubleClick="CourseDetails_MouseDoubleClick" 
+                  >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="الرقم" Binding="{Binding Course_Id}" Width ="auto"/>
+                <DataGridTextColumn Header="المادة" Binding="{Binding material_Study.Name}" Width ="auto"/>
+                <DataGridTextColumn Header="الغروب" Binding="{Binding Group}" Width ="auto"/>
+                <DataGridTextColumn Header="الكلية" Binding="{Binding faculty.Name}" Width ="auto"/>
+                <DataGridTextColumn Header="السنة" Binding="{Binding Year.Year_Number}" Width ="auto"/>
+                <DataGridTextColumn Header="الفصل" Binding="{Binding material_Study.Semester}" Width ="auto"/>
+                <DataGridTextColumn Header="القسم" Binding="{Binding section.Section_Name}" Width ="auto"/>
+                <DataGridTextColumn Header="عدد الطلاب" Binding="{Binding Student_Courses.Count}" Width ="auto"/>
+                <DataGridTextColumn Header="السعر" Binding="{Binding Price}" Width ="auto"/>
+                <DataGridTextColumn Header="المدرس" Binding="{Binding teacher.Name}" Width ="auto"/>
+                <DataGridTextColumn Header="الفصل" Binding="{Binding term.name}" Width ="auto"/>
+                <DataGridTextColumn Header="تاريخ البداية" Binding="{Binding Start_Date, StringFormat={}{0:dd.MM.yyyy}}" Width ="auto"/>
+                <DataGridTextColumn Header="تاريخ الانتهاء" Binding="{Binding End_Date, StringFormat={}{0:dd.MM.yyyy}}" Width ="auto"/>
+                <DataGridTemplateColumn Header="تعديل">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Click="Button_Click" Foreground="White" VerticalAlignment="Center"   Width="auto"  Content="تعديل" Style="{StaticResource MaterialDesignFlatAccentBgButton}" Background="Black" Opacity="0.5" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="حذف">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Click="delete" Foreground="White" VerticalAlignment="Center"   Width="auto"  Content="حذف" Style="{StaticResource MaterialDesignFlatAccentBgButton}" Background="Black" Opacity="0.5" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

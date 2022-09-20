@@ -1,0 +1,46 @@
+﻿<Window x:Class="A2Z_.Views.Display_Folder.Display"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:A2Z_.Views.Display_Folder"
+        mc:Ignorable="d"
+       WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize" 
+        WindowStyle="None"
+        FlowDirection="RightToLeft"
+        Title="استعراض المعلومات "
+         Height="700" Width="1280"
+        Icon="/Asset/A2zIcon.jpg">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Rectangle Grid.Row="0"  Fill="Black"  Opacity="0.7" MouseLeftButtonDown="Rectangle_MouseLeftButtonDown"/>
+        <TextBlock Grid.Row="0" Foreground="White" Text="استعراض بيانات" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="60,5,50,0"/>
+        <Image Grid.Row="0" Source="/Asset/A2zIcon.jpg" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,0,40,0" />
+        <Image Grid.Row="0" Cursor="Hand" ToolTip="إغلاق" MouseLeftButtonUp="Image_MouseLeftButtonUp" Source="/Asset/close_window_50px.png" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,2,10,0" />
+        <Image Grid.Row="0" Cursor="Hand" ToolTip="تصغير" MouseLeftButtonUp="Image_MouseLeftButtonUp_1" Source="/Asset/minimize_window_50px.png" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,2,40,0" />
+    <StackPanel Background="WhiteSmoke" Grid.Row="1">
+        <Grid Height="50">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10 0">
+                    <Button Uid="0" Width="140" Content="الدورات" Height="50" Background="{x:Null}" BorderBrush="{x:Null}"  Foreground="Black" Opacity="0.7" Click="Button_Click"/>
+                    <Button Uid="1" Width="140" Content="الطلاب" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Opacity="0.7" Click="Button_Click"/>
+                    <Button Uid="2" Width="140" Content="المدرسين" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Opacity="0.7" Click="Button_Click"/>
+                    <Button Uid="3" Width="140" Content="الدورات المنتهية" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Opacity="0.7" Click="Button_Click"/>
+                    <Button Uid="4" Width="140" Content="الاقسام" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Opacity="0.7" Click="Button_Click"/>
+                    <Button Uid="5" Width="140" Content="الكليات" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Opacity="0.7" Click="Button_Click"/>
+                    <Button Uid="6" Width="140" Content="السنوات" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Opacity="0.7" Click="Button_Click"/>
+                    <Button Uid="7" Width="140" Content="المواد " Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Opacity="0.7" Click="Button_Click"/>
+                    <Button Uid="8" Width="140" Content="الفصول " Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Opacity="0.7" Click="Button_Click"/>
+            </StackPanel>
+            <Grid x:Name="GridCursor" Width="120" Background="Black" Height="5"  HorizontalAlignment="Left" Margin="15 40 0 0"/>
+        </Grid>
+        <Frame x:Name="GridMain" Height="620" NavigationUIVisibility="Hidden">
+
+        </Frame>
+    </StackPanel>
+    </Grid>
+</Window>

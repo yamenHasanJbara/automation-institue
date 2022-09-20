@@ -1,0 +1,46 @@
+﻿<Window x:Class="A2Z_.Views.Add_Folder.Add"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:A2Z_.Views.Add_Folder"
+        mc:Ignorable="d"
+        Title="إضافة" Height="700" Width="1280"
+        WindowStartupLocation="CenterScreen"
+        FlowDirection="RightToLeft"
+        Icon="/Asset/A2zIcon.jpg"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        >
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <Rectangle Grid.Row="0"  Fill="Black"  Opacity="0.7" MouseLeftButtonDown="Window_MouseDown"/>
+        <TextBlock Grid.Row="0" Foreground="White" Text="إضافة بيانات" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="60,5,50,0"/>
+        <Image Grid.Row="0"  Source="/Asset/A2zIcon.jpg" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,0,40,0" />
+        <Image Grid.Row="0" Cursor="Hand" ToolTip="إغلاق" MouseLeftButtonUp="Ellipse_MouseLeftButtonUp" Source="/Asset/close_window_50px.png" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,2,10,0" />
+        <Image Grid.Row="0" Cursor="Hand" ToolTip="تصغير" MouseLeftButtonUp="Ellipse_MouseLeftButtonUp_1" Source="/Asset/minimize_window_50px.png" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,2,40,0" />
+        
+            <StackPanel Background="White" Grid.Row="1">
+            <Grid Height="50">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10 0">
+                    <Button Uid="0" Width="140" Content="طالب" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Opacity="0.7" Click="Button_Click"/>
+                    <Button Uid="1" Width="140" Content="تسجيل طالب" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black"  Opacity="0.7"  Click="Button_Click"/>
+                    <Button Uid="2" Width="140" Content="دورة" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Opacity="0.7"  Click="Button_Click"/>
+                    <Button Uid="3" Width="140" Content="مدرس" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Opacity="0.7"  Click="Button_Click"/>
+                    <Button Uid="4" Width="140" Content="مادة" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Opacity="0.7" Click="Button_Click"/>
+                    <Button Uid="5" Width="140" Content="قسم" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Opacity="0.7" Click="Button_Click"/>
+                    <Button Uid="6" Width="140" Content="كلية" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Opacity="0.7" Click="Button_Click"/>
+                    <Button Uid="7" Width="140" Content="سنة" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Opacity="0.7" Click="Button_Click"/>
+                    <Button Uid="8" Width="140" Content="فصول" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Opacity="0.7" Click="Button_Click"/>
+                </StackPanel>
+                <Grid x:Name="GridCursor" Width="120" Height="5" Background="Black" HorizontalAlignment="Left" Margin="15 40 0 0"/>
+            </Grid>
+            <Frame x:Name="GridMain" Height="620"></Frame>
+        </StackPanel>
+    </Grid>
+</Window>
